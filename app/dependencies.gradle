@@ -1,0 +1,31 @@
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation supportDependencies.appCompat
+    implementation supportDependencies.design
+    implementation supportDependencies.recyclerView
+    implementation supportDependencies.cardView
+    implementation supportDependencies.butterKnife
+    annotationProcessor   supportDependencies.butterknifeCompiler
+    implementation supportDependencies.eventBus
+    implementation supportDependencies.bottomBar
+    implementation supportDependencies.fragNav
+    implementation supportDependencies.floatingSearchView
+    implementation supportDependencies.fab
+    implementation supportDependencies.gson
+    implementation supportDependencies.retrofit
+    implementation supportDependencies.retrofitConvert
+    implementation supportDependencies.okhttp
+    implementation supportDependencies.shortcutBadger
+    implementation supportDependencies.servicesLocation
+    implementation supportDependencies.servicesMaps
+    implementation supportDependencies.firebaseCore
+    implementation supportDependencies.firebaseMessaging
+    implementation supportDependencies.retrofitRxJava
+    implementation supportDependencies.retrofitScalars
+    implementation supportDependencies.rxAndroid
+    implementation supportDependencies.rxJava
+
+
+    debugImplementation debugDependencies.logger
+}

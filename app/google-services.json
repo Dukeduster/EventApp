@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "689193816628",
+    "firebase_url": "https://eventapp-224fb.firebaseio.com",
+    "project_id": "eventapp-224fb",
+    "storage_bucket": "eventapp-224fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689193816628:android:16905fc4d537f58e",
+        "android_client_info": {
+          "package_name": "co.edu.udea.mobile.eventapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689193816628-pu3lmkhl8q44u4tighqf9qd6ldjlbt04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIxo8Qm5hSWkLEVJQTHM8nCLeQiPxeA4o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

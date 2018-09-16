@@ -1,3 +1,143 @@
 <resources>
     <string name="app_name">EventApp</string>
+    <string name="login_bar">Iniciar Sesión</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">Iniciar Sesión</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Iniciar Sesion o Registrarse</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!-- Strings course form-->
+    <string name="title_activity_add_event">Crear Evento</string>
+    <string name="name_event">Nombre del Evento</string>
+    <string name="desc_event">Descripcion del  Evento</string>
+    <string name="date_event">Fecha Final Evento</string>
+    <string name="title_activity_settings">Settings</string>
+    <!-- Strings session form-->
+    <string name="title_activity_add_session">Crear Sesión</string>
+    <string name="name_session">Nombre de la Sesión</string>
+    <string name="desc_session">Descripcion de la Sesión</string>
+    <string name="date_session">Fecha de la Sesión</string>
+    <string name="time_session">Hora de la Sesión</string>
+    <string name="code_session">Código Verificador</string>
+    <string name="title_activity_camera">Buscando QR</string>
+
+    <!-- Strings related to Course Card -->
+    <string name="name_event_card">Nombre Evento:</string>
+    <string name="desc_event_card">Descripcion:</string>
+    <string name="date_event_card">Fecha:</string>
+    <string name="session_btn_event_card">Ver Sesiones</string>
+    <!-- Strings related to session Card -->
+    <string name="assistance_btn_card">Ver Asistencia</string>
+    <string name="qr_link_btn_card">Ver QR</string>
+    <!-- Strings related to Assist Card -->
+    <string name="sess_assist_card">Sesión:</string>
+    <string name="stu_assist_card">Asistente:</string>
+    <string name="date_assist_card">Fecha Asistencia :</string>
+    <string name="lat_assist_card">Latitud:</string>
+    <string name="lon_assist_card">Longitud:</string>
+    <string name="email_assist_card">Email:</string>
+    <string name="btn_assist_map">Ver Mapa</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyCiKjo8_gfw7u5WdOfQz2nlrjBZIgsswAE</string>
 </resources>
