@@ -143,6 +143,7 @@ public class AddEventActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.event, menu);
+        Log.e("entro","inflar menu");
         return true;
     }
 
@@ -175,7 +176,7 @@ public class AddEventActivity extends AppCompatActivity {
             Event event= new Event();
             event.setDescription(this.mDescription.getText().toString());
             event.setExpireDate(this.mDateFinish.getText().toString()+"T00:00:00");
-            event.setName(this.mNameCourse.getText().toString());
+            event.setName(this.mNameCourse.getText().toString().toUpperCase());
             Log.e("id user", String.valueOf(user.getId()));
             event.setOwner(user.getId());
             event.setEnabled(Boolean.TRUE);

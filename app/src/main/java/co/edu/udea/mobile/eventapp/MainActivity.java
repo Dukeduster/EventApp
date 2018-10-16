@@ -323,6 +323,7 @@ public class MainActivity extends AppCompatActivity
         UserApp user = getUserFromPrefs();
         Call<List<AttendanceShow>> call = RestClientImpl.getClientLogin()
                 .getAssistByUser(user.getId());
+        Log.e("id user", user.getId()+"");
         call.enqueue(new Callback<List<AttendanceShow>>() {
             @Override
             public void onResponse(Call<List<AttendanceShow>> call, Response<List<AttendanceShow>> response) {

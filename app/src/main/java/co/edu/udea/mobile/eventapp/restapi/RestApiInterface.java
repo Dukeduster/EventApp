@@ -33,6 +33,6 @@ public interface RestApiInterface {
     Call<Attendance> saveAttendance(@Body Attendance assist);
     @GET("getAttendanceByUser")
     Call<List<AttendanceShow>> getAssistByUser(@Query("usr") int attendant);
-    @GET("getAttendanceByUser")
+    @GET("getAttendanceBySession")
     Call<List<AttendanceShow>> getAssistBySession(@Query("session") String session);
 }

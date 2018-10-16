@@ -180,7 +180,7 @@ public class AddSessionActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.event, menu);
+        getMenuInflater().inflate(R.menu.session, menu);
         return true;
     }
 
@@ -190,7 +190,7 @@ public class AddSessionActivity extends AppCompatActivity {
         Log.e("menu", ""+item.getItemId());
         switch (item.getItemId()) {
 
-            case R.id.save_curso:
+            case R.id.save_session:
                 Log.e("menu", "after case");
                 saveSession();
                 return true;
@@ -213,7 +213,7 @@ public class AddSessionActivity extends AppCompatActivity {
             session.setDescription(this.mDescription.getText().toString());
             session.setDateSession(this.mDateSession.getText().toString()+"T"+this.mTimeSession.getText()+":00");
             session.setId(dateFormatted+timeFormatted+eventId+mCodeSession.getText().toString());
-            session.setName(this.mNameSession.getText().toString());
+            session.setName(this.mNameSession.getText().toString().toUpperCase());
             session.setEvent(eventId);
             Call<EventSession> call = RestClientImpl.getClientLogin().saveSession(session);
             call.enqueue(new Callback<EventSession>() {
