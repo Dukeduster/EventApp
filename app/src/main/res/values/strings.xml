@@ -50,7 +50,8 @@
     <!-- Strings related to Assist Card -->
     <string name="sess_assist_card">Sesión:</string>
     <string name="stu_assist_card">Asistente:</string>
-    <string name="date_assist_card">Fecha Asistencia :</string>
+    <string name="date_assist_card">Fecha:</string>
+    <string name="hour_assist_card">Hora:</string>
     <string name="lat_assist_card">Latitud:</string>
     <string name="lon_assist_card">Longitud:</string>
     <string name="email_assist_card">Email:</string>

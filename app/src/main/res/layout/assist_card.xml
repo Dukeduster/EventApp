@@ -2,6 +2,7 @@
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -14,112 +15,163 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logoreduced"/>
-        <TextView
-            android:id="@+id/session_assist_card"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:textStyle="bold"
-            />
+        <RelativeLayout
+            android:layout_marginRight="16dp"
+            android:id="@+id/layoutImg"
+            android:layout_width="110dp"
+            android:layout_height="match_parent">
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/date_assist_lbl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="@string/date_assist_card"
-                android:textStyle="bold|italic"
-                />
+            <android.support.v7.widget.CardView
+                android:layout_width="100dp"
+                android:id="@+id/cardImg"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="50dp"
+                android:layout_centerInParent="true"
+                app:cardBackgroundColor="@color/colorPrimaryDark">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/date_assist_card"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                />
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_letter_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="50dp"
+                        android:text="L"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white_app"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/label_stu_assist"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="@string/stu_assist_card"
-                android:textStyle="bold|italic"
-                />
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7">
 
             <TextView
-                android:id="@+id/stu_assist_card"
+                android:id="@+id/session_assist_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/label_email_assist"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="@string/email_assist_card"
-                android:textStyle="bold|italic"
-                />
-
-            <TextView
-                android:id="@+id/email_assist_card"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                />
-        </LinearLayout>
-
-
-
-
-        <!-- <TextView
-             android:id="@+id/description"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginLeft="10dp"
-             /-->
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center">
-            <Button
-                android:id="@+id/button_assist_map"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="@string/btn_assist_map"
-                android:textColor="@color/colorPrimary"
-                android:theme="@style/CardButton"
+                android:layout_marginTop="4dp"
                 android:textStyle="bold"
-                style="@style/Widget.AppCompat.Button.Borderless"/>
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/date_assist_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/date_assist_card"
+                    android:textStyle="bold|italic"
+                    />
+
+                <TextView
+                    android:id="@+id/date_assist_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/hour_assist_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hour_assist_card"
+                    android:textStyle="bold|italic"
+                    />
+
+                <TextView
+                    android:id="@+id/hour_assist_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/label_stu_assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/stu_assist_card"
+                    android:textStyle="bold|italic"
+                    />
+
+                <TextView
+                    android:id="@+id/stu_assist_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/label_email_assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/email_assist_card"
+                    android:textStyle="bold|italic"
+                    />
+
+                <TextView
+                    android:id="@+id/email_assist_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+
+
+
+            <!-- <TextView
+                 android:id="@+id/description"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 /-->
+
+                <Button
+                    android:id="@+id/button_assist_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/btn_assist_map"
+                    android:textColor="@color/colorPrimary"
+                    android:theme="@style/CardButton"
+                    android:textStyle="bold"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
 
         </LinearLayout>
+
 
     </LinearLayout>
 

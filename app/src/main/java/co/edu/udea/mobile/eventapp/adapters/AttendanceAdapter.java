@@ -57,7 +57,11 @@ public class AttendanceAdapter  extends RecyclerView.Adapter<AttendanceAdapter.R
     @Override
     public void onBindViewHolder(final AttendanceAdapter.RequestViewHolder viewHolder, int i) {
         viewHolder.sessionName.setText(attendances.get(i).getSession());
-        viewHolder.attendanceDate.setText(attendances.get(i).getAttendanceDate());
+        String fecha[]= attendances.get(i).getAttendanceDate().split("T");
+        viewHolder.attendanceDate.setText(fecha[0]);
+        String letter = Character.toString(attendances.get(i).getAttendant().getName().charAt(0)).toUpperCase();
+        viewHolder.tvLetterCard.setText(letter);
+        viewHolder.attendanceHour.setText(fecha[1].split("-")[0]);
         viewHolder.attendantName.setText(String.valueOf(attendances.get(i).attendant.getName() + " " +
                 attendances.get(i).attendant.getLastname()));
         viewHolder.assistEmail.setText(attendances.get(i).attendant.getEmail());
@@ -93,12 +97,16 @@ public class AttendanceAdapter  extends RecyclerView.Adapter<AttendanceAdapter.R
         public TextView sessionName;
         @BindView(R.id.date_assist_card)
         public TextView attendanceDate;
+        @BindView(R.id.hour_assist_card)
+        public TextView attendanceHour;
         @BindView(R.id.stu_assist_card)
         public TextView attendantName;
         @BindView(R.id.email_assist_card)
         public TextView assistEmail;
         @BindView(R.id.button_assist_map)
         public Button buttonMap;
+        @BindView(R.id.tv_letter_card)
+        public TextView tvLetterCard;
 
         View viewParent;
 
